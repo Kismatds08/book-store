@@ -21,7 +21,7 @@ app.use(bodyParser.json())
 const PORT = process.env.port || 3000
 
 //listening to port 
-app.listen(PORT, ()=>console.log('server has started on port '+ PORT))
+app.listen(PORT, ()=>console.log('server started on port '+ PORT))
 
 //sending message for default route
 app.get('/', (req,res)=>{
@@ -31,7 +31,7 @@ app.get('/', (req,res)=>{
 //using api routes
 app.use('/api',apiRoutes)
 
-const connectionString = 'mongodb+srv://kismatds08:Kismat109547@cluster0.n8b3k.mongodb.net/book-store?retryWrites=true&w=majority';
+const connectionString = 'mongodb+srv://kismatds08:Kismat109547@cluster0.ltztp.mongodb.net/book-store?retryWrites=true&w=majority';
 
 //connecting to mongodb
 mongoose.connect(connectionString, ()=>console.log('connected to db'))
