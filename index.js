@@ -31,7 +31,7 @@ app.get('/', (req,res)=>{
 //using api routes
 app.use('/api',apiRoutes)
 
-const connectionString = 'mongodb+srv://msikder:msikder08@cluster0.n8b3k.mongodb.net/book-store?retryWrites=true&w=majority';
+const connectionString = 'mongodb+srv://kismatds08:Kismat109547@cluster0.n8b3k.mongodb.net/book-store?retryWrites=true&w=majority';
 
 //connecting to mongodb
 mongoose.connect(connectionString, ()=>console.log('connected to db'))
